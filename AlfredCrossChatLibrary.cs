@@ -60,6 +60,8 @@ namespace AlfredCrossChatLibrary
                     logger.Info("Connected to twitch with user " + config.UserID);
                     break;
                 case Platform.MIXER:
+                    logger.Info("Configuring Mixer with user " + config.UserID);
+                    throw new NotImplementedException();
                     break;
                 default:
                     logger.Error("Invalid platform found. Throwing exception.");
